@@ -1,6 +1,6 @@
 import { ApisauceInstance, create } from "apisauce";
 import { ApiConfig, DEFAULT_API_CONFIG } from "./api-config";
-import { ExampleApi } from "../index";
+import { LoginApi, ListFriendsApi } from "../index";
 
 /**
  * Manages all requests to the API.
@@ -55,7 +55,8 @@ const baseApi = new Api();
 baseApi.setup();
 const api = {
   api: baseApi,
-  example: new ExampleApi(baseApi)
+  login: new LoginApi(baseApi),
+  listFriends: new ListFriendsApi(baseApi),
 };
 
 export default api;

@@ -1,1 +1,2 @@
-export * from "./example/index";
+export * from "./login/index";
+export * from "./listfriends/index";
