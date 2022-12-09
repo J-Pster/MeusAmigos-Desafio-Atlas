@@ -7,6 +7,9 @@ WORKDIR /app
 ## Copy the package.json in order to install the necessary dependencies
 COPY ./package.json .
 
+RUN mkdir -p /app/node_modules
+RUN chown node:node /app/node_modules
+
 ## We install the dependencies
 RUN npm install
 
@@ -14,7 +17,7 @@ RUN npm install
 COPY . /app
 
 ## Expose the port
-EXPOSE 3000
+EXPOSE 4200
 
 ## Run the application
 CMD npm run start
