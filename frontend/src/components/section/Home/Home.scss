@@ -1,0 +1,13 @@
+@import "../../../theme/style.scss";
+
+#list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 4rem 3rem;
+}
