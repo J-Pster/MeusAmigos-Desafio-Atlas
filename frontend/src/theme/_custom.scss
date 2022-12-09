@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    color: white;
-    background-color: #2d2929;
-opacity: 1;
-background-image: radial-gradient(#6b3a3a 2px, #2d2929 2px);
-background-size: 40px 40px;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 //----Display----//
@@ -72,3 +79,104 @@ background-size: 40px 40px;
 
 
 //--------------//
+.dot-spacer {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background-color: $secondary-color;
+
+  margin: 0 0.5rem;
+  margin-bottom: .1rem;
+}
+
+.app {
+  background-color: $primary-color;
+  font-family: $font-base;
+}
+
+.box-shadow {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.app__whitebg {
+  background-color: $background-color;
+}
+
+.app__primarybg {
+  background-color: $primary-color;
+}
+
+.app_light_blackbg {
+  background-color: $light-black-color;
+}
+
+.app__container {
+  width: 100%;
+  min-height: 90vh;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__wrapper {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+
+  @media screen and (max-width: 450px) {
+    padding: 4rem 1rem 2rem;
+  }
+}
+
+.head-text {
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-align: center;
+  color: $dark-black-color;
+  text-transform: capitalize;
+
+  span {
+    color: $secondary-color;
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+
+.p-text {
+  font-size: 1rem;
+  text-align: left;
+  color: $dark-black-color;
+  line-height: 1.5;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
+}
+
+.bold-text {
+  font-size: 1rem;
+  font-weight: 800;
+  color: $dark-black-color;
+  text-align: left;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+  }
+}
+  
