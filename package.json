@@ -1,0 +1,22 @@
+{
+  "name": "meusamigos-desafio-atlas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compose:up": "docker-compose up -d",
+    "compose:down": "docker-compose down",
+    "compose:up:rebuild": "docker-compose up -d --build",
+    "compose:down:orphans": "docker-compose down --remove-orphans"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-Pster/MeusAmigos-Desafio-Atlas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J-Pster/MeusAmigos-Desafio-Atlas/issues"
+  },
+  "homepage": "https://github.com/J-Pster/MeusAmigos-Desafio-Atlas#readme"
+}
